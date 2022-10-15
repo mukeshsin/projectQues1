@@ -1,9 +1,11 @@
+
 // Import express
 import express from "express";
 // Import cors
 import cors from "cors";
 // Import connection
 import db from "./config/db.config.js";
+
 // Import router
 import Router from "./routes/routes.js";
 //await db.sync({ force: true });
