@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const Sequelize = require("sequelize");
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   host: dbConfig.HOST,
-  password:dbConfig.password,
+  password: dbConfig.password,
   dialect: dbConfig.dialect,
   operatorsAliases: false,
 
