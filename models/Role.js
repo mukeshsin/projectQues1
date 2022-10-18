@@ -32,7 +32,9 @@ const Role = db.define('roles', {
   freezetableName: "true",
   tableName: "roles"
 });
-
+// Role.findAllroles=()=>{
+//   return 
+// }
 // Export model Role
 export default Role;
 

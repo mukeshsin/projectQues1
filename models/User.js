@@ -3,11 +3,13 @@
 import { Sequelize } from "sequelize";
 // import connection 
 import db from "../config/db.config.js";
+import { userRegister } from "../controllers/User.js";
+import Role from "./Role.js";
 // init DataTypes
 const { DataTypes } = Sequelize;
 
 // Define schema
-const user = db.define('users', {
+const User = db.define('Users', {
   // Define attributes
   id: {
     type: DataTypes.INTEGER,
@@ -55,7 +57,15 @@ const user = db.define('users', {
   freezetableName: "true",
   tableName: "users"
 });
+User.findAll({
+ iclude:[{
+  model:Role,
+  required:false
+ }]
+
+
+})
 
 // Export model user
-export default user;
+export default User;
 

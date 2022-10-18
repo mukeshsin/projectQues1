@@ -13,7 +13,7 @@ import {
 // Import User Controller
 import {
   userRegister,
-   //userLogin
+  userLogin
 } from "../controllers/User.js";
 
 
@@ -46,7 +46,7 @@ router.post('/user/register', userRegister);
 
 
 //Route for User login
-//router.post('/user/login', userLogin);
+router.post('/user/login', userLogin);
 
 // export router
 export default router;
