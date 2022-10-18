@@ -57,7 +57,7 @@ export const userRegister = async (req, res) => {
   }
 };
 
-//user login
+ //user login
 
 export const userLogin = async (req, res) => {
   try {
