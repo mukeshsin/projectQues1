@@ -9,7 +9,7 @@ const { DataTypes } = Sequelize;
 // Define schema
 const Role = db.define('roles', {
   // Define attributes
-  id: {
+  Id: {
     type: DataTypes.INTEGER,
     allownull: false,
     autoIncrement: true,
